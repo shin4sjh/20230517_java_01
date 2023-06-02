@@ -26,6 +26,7 @@ public class TestArray {
 //			personArray3[2].setAge[25]
 //			personArray3[3].setAge[25]
 
+	 
 	}
 
 }
