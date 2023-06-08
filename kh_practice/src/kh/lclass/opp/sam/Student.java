@@ -6,7 +6,7 @@ public class Student {
 //	private Char gender; 
 	private int score;
 	private int grade;
-	priavate Staic final int naxiunt
+//	priavate Staic final int naxiunt
 	
 //	public Student() {
 //		Super();
