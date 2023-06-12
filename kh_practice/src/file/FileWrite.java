@@ -16,22 +16,21 @@ public class FileWrite {
 		File f1 = new File("D:/Hello/World");
 		f1.mkdir();
 		File f2 = new File("D:/Hello/World/a.txt");
-//		path filename
 		FileWriter fw = null;
 		try {
-			f2.createNewFile(); // 파일생성
+			f2.createNewFile(); 
 
-			fw = new FileWriter(f2); // File에 문자 형태 전송이 가능한 OutputString (File 과 java 프로그램의 통로)
-			fw.write("Hello, World"); // 전송하고자 하는 문자
-			fw.flush(); // 전송한 문자가 담긴 버퍼(통로)를 깨끗하게 밀어내기
+			fw = new FileWriter(f2); 
+			fw.write("Hello, World"); 
+			fw.flush(); 
 			return;
 		} catch (IOException e) {
 			System.out.println("file 생성 못함");
 			e.printStackTrace();
-		} finally { // return 전에 반드시 실행하고 넘어가는 문구
+		} finally { 
 			try {
 				if (fw != null)
-					/* { */fw.close();/* } */ // 통로를 닫기
+					fw.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
